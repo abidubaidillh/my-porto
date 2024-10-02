@@ -1,0 +1,119 @@
+/* Media Query untuk layar kecil */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px; /* Padding lebih kecil di navbar */
+    }
+    
+    header h1 {
+        font-size: 40px; /* Ukuran lebih kecil untuk header */
+    }
+    
+    header p {
+        font-size: 20px; /* Ukuran lebih kecil untuk teks */
+    }
+    
+    header a {
+        padding: 8px 20px; /* Padding lebih kecil pada tombol */
+        font-size: 16px; /* Ukuran font lebih kecil */
+    }
+    
+    nav ul li {
+        margin: 0 10px; /* Jarak antar link navbar lebih kecil */
+    }
+}
+
+/* Media Query untuk perangkat lebih kecil seperti smartphone */
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 15px; /* Padding lebih kecil */
+    }
+    
+    header h1 {
+        font-size: 30px; /* Ukuran lebih kecil untuk header */
+    }
+    
+    header p {
+        font-size: 18px; /* Ukuran lebih kecil untuk teks */
+    }
+    
+    header a {
+        padding: 5px 15px; /* Padding lebih kecil pada tombol */
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2C3E50;
+    color: #FFFFFF; /* Putih untuk teks agar terlihat jelas */
+
+}
+
+nav {
+    background-color: #3498DB; /* Biru */
+    padding: 15px 40px;
+    border-radius: 50px; /* Membuat rounded border */
+    width: fit-content;
+    margin: 20px auto; /* Agar nav berada di tengah */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #F39C12;
+}
+
+header {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+header p {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #3498DB;
+    background-color: #FFFFFF;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s; /* Menambahkan transisi */
+}
+
+header a:hover {
+    background-color: #F39C12;
+    color: #FFFFFF;
+}
