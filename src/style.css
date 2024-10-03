@@ -20,6 +20,19 @@
     nav ul li {
         margin: 0 10px; /* Jarak antar link navbar lebih kecil */
     }
+
+    .about-container {
+        flex-direction: column; /* Gambar dan teks disusun vertikal */
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin: 0 auto 20px; /* Agar gambar berada di tengah di layar kecil */
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+    }
 }
 
 /* Media Query untuk perangkat lebih kecil seperti smartphone */
@@ -42,12 +55,15 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #2C3E50;
     color: #FFFFFF; /* Putih untuk teks agar terlihat jelas */
-
 }
 
 nav {
@@ -115,5 +131,80 @@ header a {
 
 header a:hover {
     background-color: #F39C12;
+    color: #FFFFFF;
+}
+
+/* About Me Section */
+section#about {
+    padding: 60px 20px;
+    background-color: #34495E;
+    color: #FFFFFF;
+}
+
+.about-container {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Agar konten vertikal rata tengah */
+    justify-content: center; /* Agar konten horisontal rata tengah */
+    gap: 40px; /* Jarak antara gambar dan teks */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    width: 200px;
+    object-fit: cover; /* Agar gambar tetap proporsional */
+    margin-right: 20px;
+}
+
+/* Experience Design */
+
+section#experience {
+    padding: 60px 20px;
+    background-color: #2C3E50;
+    color: ;#FFFFFF;
+    text-align: center;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsive */
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background-color: #34495E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #F39C12;
+}
+
+.experience-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.experience-item strong {
     color: #FFFFFF;
 }
