@@ -187,6 +187,7 @@ section#about {
     width: 200px;
     object-fit: cover; /* Agar gambar tetap proporsional */
     margin-right: 20px;
+    border-radius: 10px;
 }
 
 /* Experience Design */
